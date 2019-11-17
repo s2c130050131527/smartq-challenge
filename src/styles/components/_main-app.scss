@@ -1,0 +1,55 @@
+.main-app{
+    height: calc(100vh - 112px);
+    background-color: #f0f0f0;
+    .title{
+        height: 50px;
+        padding: 10px 100px;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    .menu-items{
+        height: 80%;
+        padding: 0 100px;
+        display: flex;
+        justify-content: baseline;
+        flex-wrap: wrap;
+        .menu-item{
+            background-color: #ffffff;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            width : 23%;
+            padding: 15px;
+            content: '';
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+            height: 120px;
+            bottom: 0;
+            border-radius: 5px;
+          .top{
+              display: flex;
+              justify-content: space-between;
+              font-size: 20px;
+              font-weight: bold;
+              height: 60%;
+            .name{
+               width: 20px;
+            }
+         }
+          .bottom{
+              float: right;
+                button{
+                    cursor: pointer;
+                    appearance: none;
+                    outline: none;
+                    border: 1px solid orange;
+                    background: none;
+                    font-size: 20px;
+                    color: orange;
+                    width: 70px;
+                    border-radius: 15px;
+                }
+
+          }
+        }
+    }
+}

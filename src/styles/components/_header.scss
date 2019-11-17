@@ -59,8 +59,10 @@
   padding: 8px 100px;
   justify-content: space-around;
   flex-wrap: wrap;
+  align-items: center;
   .sub-left {
     flex: 1;
+    height: min-content;
   }
   .sub-right {
     font: 15px;
@@ -68,11 +70,13 @@
     display: flex;
     justify-content: flex-end;
     padding-right: 10%;
+    height: min-content;
     .date {
       padding-right: 10px;
     }
     .sort {
       button {
+        cursor: pointer;
         font: 500 15px Arial;
         background: none;
         appearance: none;

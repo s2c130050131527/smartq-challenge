@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  background-color: #febf34;
+  height: 56px;
+  padding: 8px 100px;
+  width: 100%;
+  justify-content: space-around;
+}
+
+
+.logo {
+    flex:0.5;
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.search-box {
+    flex:4;
+  display: flex;
+  input {
+    border: none;
+    background-color: #febf34;
+    color: #f0f0f0;
+    border-bottom: 2px solid #f0f0f0;
+    font-size: 16px;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    width: 90%;
+  }
+}
+
+
+.location {
+flex: 1;
+height: fit-content;
+  flex: 1;
+  display: flex;
+  align-self: center;
+  color: #f0f0f0;
+}
+
+.user {
+    flex:1;
+    align-self: center;
+    height: fit-content;
+  flex: 1;
+  color: #f0f0f0;
+}

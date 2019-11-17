@@ -1,40 +1,35 @@
-import { FETCH_CART,FETCH_CART_ERROR,FETCH_CART_SUCCESS } from "../constants";
-const INITIAL_STATE = {
-    loading: false,
-    flag: false,
-    data:{},
-    error:false,
-}
+import { CART_ADD, CART_CLEAR, CART_REMOVE } from '../constants';
+const INITIAL_STATE = {};
 
-
-export const cartReducer = (state = INITIAL_STATE, action)=> {
-    switch(action.type){
-        case FETCH_CART:{
-            return {
-                ...state,
-                flag:false,
-                loading: true,
-                error: false,
-            }
-        }
-        case FETCH_CART_SUCCESS:{
-            return {
-                loading: false,
-                error: false,
-                flag:true,
-                data: action.data
-            }
-        }
-        case FETCH_CART_ERROR:{
-            return {
-                loading: false,
-                error: true,
-                flag:false,
-                data:{} 
-            }
-        }
-        default:
-            return state;
+export const cartReducer = (state = INITIAL_STATE, action) => {
+  switch (action.type) {
+    case CART_ADD: {
+      console.log(state[action.value]);
+      if (state[action.value]) {
+        return {
+          ...state,
+          [action.value]: state[action.value] + 1
+        };
+      } else {
+        return {
+          ...state,
+          [action.value]: 1
+        };
+      }
     }
-
-}
+    case CART_REMOVE: {
+      if (state[action.value]) {
+        return {
+          ...state,
+          [action.value]: state[action.value] - 1
+        };
+      }
+      break;
+    }
+    case CART_CLEAR: {
+      return {};
+    }
+    default:
+      return state;
+  }
+};

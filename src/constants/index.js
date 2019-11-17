@@ -1,6 +1,6 @@
-export const FETCH_CART='FETCH_CART';
-export const FETCH_CART_ERROR='FETCH_CART_ERROR';
-export const FETCH_CART_SUCCESS='FETCH_CART_SUCCESS';
+export const CART_ADD='CART_ADD';
+export const CART_REMOVE='CART_REMOVE';
+export const CART_CLEAR='CART_CLEAR';
 export const SEARCH_CHANGE='SEARCH_CHANGE';
 export const SEARCH_CLEAR='SEARCH_CLEAR';
 export const FETCH_MENU='FETCH_MENU';

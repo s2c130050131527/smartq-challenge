@@ -50,10 +50,32 @@
                     &:disabled{
                         cursor: not-allowed;
                     }
+                    &.remove-minus{
+                        width:20px;
+                        border-radius:  15px 0 0 15px;
+                        color: black;
+                    }
+                    &.add-plus{
+                        width:20px;
+                        border-radius: 0 15px 15px 0;
+                        color:black;
+                    }
+                
+                
+                }
+                .count{
+                    border: 1px solid orange;
+                    display: inline-block;
+                    height: 27px;
+                    vertical-align: super;
+                    width: 20px;
+                    text-align: center;
+                    
+
                 }
           }
           &.disabled{
-              background-color: #a0a0a0;
+              background-color: #d0d0d0;
               cursor: not-allowed;
           }
         }

@@ -11,6 +11,7 @@ class Menu extends React.Component {
         menuList: nextProps.menu.data,
       }
     }
+    return null;
   }
   state = {
     menuList: [],
@@ -40,12 +41,7 @@ class Menu extends React.Component {
 
 Menu.propTypes ={
   menuAction: PropTypes.func,
-  menu:{
-    data:[],
-    loading: false,
-    flag: false,
-    error:false,
-  }
+  menu:PropTypes.object
 }
 
 const mapStateToProps = state => ({

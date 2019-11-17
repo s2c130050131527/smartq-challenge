@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Item = (props) => {
-    return <div className="menu-item">
+    return <div className={`menu-item ${props.disabled && 'disabled'}`}>
         <div className="top">
             <div className="name">
                 {props.item.itemname}

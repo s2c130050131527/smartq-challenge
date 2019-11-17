@@ -47,8 +47,14 @@
                     color: orange;
                     width: 70px;
                     border-radius: 15px;
+                    &:disabled{
+                        cursor: not-allowed;
+                    }
                 }
-
+          }
+          &.disabled{
+              background-color: #a0a0a0;
+              cursor: not-allowed;
           }
         }
     }
